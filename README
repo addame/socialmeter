@@ -3,6 +3,8 @@ A gem that parses html pages looking for someter data and transforming it to jso
 * install :
  
 	gem install someter
+    
+	Note : you need to install nokogiri (gem install nokogiri)
  
 * use : 
 

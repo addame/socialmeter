@@ -25,7 +25,7 @@ class Aggregate
     a.aggs = [];agg_doc.css('.aggs > .func').each do |vs| 
       dimension_type  = vs[:class].gsub(/func /,'')
       dimension_value = vs.inner_text
-      a.aggs << {:dimension=> dimension_type, :value => dimension_value}
+      a.aggs << {:function=> dimension_type, :value => dimension_value}
     end
     #puts "aggregation object : #{a.aggs.to_s}"
     return a

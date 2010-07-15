@@ -8,5 +8,5 @@ Echoe.new('someter', '0.0.1') do |p|
   p.author         = "Mehdi Adda"
   p.email          = "mehdi.adda @nospam@ gmail.com"
   p.ignore_pattern = ["tmp/*", "script/*"]
-  p.development_dependencies = []
+  p.development_dependencies = [nokogiri]
 end

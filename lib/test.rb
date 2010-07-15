@@ -1,4 +1,3 @@
-require 'nokogiri'
 require 'someter'  
 
 
@@ -105,16 +104,7 @@ string_to_parse = <<END_STR
 </div>
 END_STR
 
-def test 
-  doc = Nokogiri::HTML(string_to_parse) 
- 
-  doc.css('.aggs > .func').each { |vs| 
-    # remove func
-    puts vs[:class].gsub(/func /,'')
-    puts  vs.inner_text
-  } 
-  
-end
+
 
 def write_to_file(message)
   File.open('test.txt', 'a') do |f2|
@@ -127,13 +117,3 @@ sm = SoMeter.new(:string =>string_to_parse)
 
 #puts sm.to_js
 write_to_file sm.to_json
-
-#class Salut
-#  def hello s
-#    puts s
-#  end
-#end
-#
-#s = Salut.new
-#
-#s.send(:hello, 'Bonjour, comment ca va ?')

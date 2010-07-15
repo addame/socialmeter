@@ -1,0 +1,14 @@
+A gem that parses html pages looking for someter data and transforming it to json
+
+* use : 
+
+sm = SoMeter.new(:string =>string_to_parse)
+
+or :
+
+sm = SoMeter.new(:url =>valide_url)
+
+
+* print data in json format :
+
+puts sm.to_json

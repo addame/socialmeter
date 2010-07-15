@@ -126,7 +126,7 @@ end
 sm = SoMeter.new(:string =>string_to_parse)
 
 #puts sm.to_js
-write_to_file sm.to_js
+write_to_file sm.to_json
 
 #class Salut
 #  def hello s

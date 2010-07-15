@@ -28,7 +28,7 @@ class SoMeter
       
   end  
   
-  def to_js
+  def to_json
     @reviews.to_json
   end
  
